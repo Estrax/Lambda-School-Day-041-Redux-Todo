@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const AppDiv = styled.div`
     min-width: 380px;
     max-width: 50%;
-	min-height: 480px;
-	max-height: 100%;
+	min-height: 200px;
+	max-height: 60%;
 	background: #fafafa;
 	display: flex;
 	flex-direction: column;
@@ -12,7 +12,7 @@ export const AppDiv = styled.div`
 	justify-content: flex-end;
 	border-radius: 5px;
 	box-shadow: 0 0 5px rgba(25,25,25,.25);
-	padding: 3rem;
+    padding: 3rem;
 `;
 
 export const TodoTitle = styled.h1`
@@ -36,15 +36,26 @@ export const TodoAddForm = styled.form`
 
 export const TodoAddInput = styled.input`
     width: 100%;
+    border: 2px solid black;
     border-radius: 5px;
     padding: 10px;
     margin-top: 2rem;
+    color: black;
+    background: none;
 `;
 
 export const TodoAddBtn = styled.input`
     width: 100%;
+    border: 2px solid black;
     border-radius: 5px;
     margin: 1rem auto;
+    color: black;
+    background: none;
+
+    &:hover {
+        background: black;
+        color: white;
+    }
 `;
 
 export const TodoText = styled.p`
