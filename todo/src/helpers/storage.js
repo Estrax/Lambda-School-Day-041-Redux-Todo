@@ -5,6 +5,9 @@ export const save = (state) => {
 }
 
 export const load = () => {
+    if(localStorage.getItem('todos') === undefined || localStorage.getItem('todos') === null){
+        return initialState();
+    }
     if(localStorage.getItem('todos').length === 0){
         return initialState();
     }
