@@ -10,7 +10,12 @@ const Todo = (props) => {
             >
                 {props.todo.text}
             </h1>
-            <button onClick={() => props.removeTodo(props.todo.id)}>Remove</button>
+            
+            <button
+                onClick={() => props.removeTodo(props.todo.id)}
+            >
+                Remove
+            </button>
         </>
     );
 }
