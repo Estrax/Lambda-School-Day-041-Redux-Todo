@@ -4,11 +4,42 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import store from './store';
 import { Provider } from 'react-redux';
+import { createGlobalStyle } from "styled-components";
+
+const GlobalStyles = createGlobalStyle`
+	html {
+		overflow: hidden;
+		font-size: 62.5%;
+		margin: 0;
+		padding: 0;
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		width: 100vw;
+		height: 100vh;
+		font-size: 1.8rem;
+		line-height: 1.5;
+	}
+
+	#root {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #ff9068;
+		background: linear-gradient(45deg, #000 , #fff);
+		height: 100%;
+	}
+`;
 
 ReactDOM.render(
-    <Provider store={store}>
-        <App />
-    </Provider>, document.getElementById('root'));
+	<Provider store={store}>
+		<GlobalStyles />
+		<App />
+	</Provider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
