@@ -15,7 +15,7 @@ const Todo = (props) => {
             <TodoBtn
                 onClick={() => props.removeTodo(props.todo.id)}
             >
-                X
+                x
             </TodoBtn>
         </TodoDiv>
     );
