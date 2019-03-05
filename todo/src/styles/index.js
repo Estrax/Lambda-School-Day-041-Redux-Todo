@@ -4,7 +4,10 @@ import {
     TodoList,
     TodoAddForm,
     TodoAddBtn,
-    TodoAddInput
+    TodoAddInput,
+    TodoText,
+    TodoBtn,
+    TodoDiv
 } from './todos';
 
 export {
@@ -13,5 +16,8 @@ export {
     TodoList,
     TodoAddForm,
     TodoAddBtn,
-    TodoAddInput
+    TodoAddInput,
+    TodoText,
+    TodoBtn,
+    TodoDiv
 }

@@ -1,22 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { TodoText, TodoBtn, TodoDiv } from '../styles';
 
 const Todo = (props) => {
     return (
-        <>
-            <h1
+        <TodoDiv>
+            <TodoText
                 onClick={() => props.toggleTodo(props.todo.id)}
                 style={{ textDecoration: props.todo.completed ? 'line-through' : 'none'}}
             >
                 {props.todo.text}
-            </h1>
+            </TodoText>
             
-            <button
+            <TodoBtn
                 onClick={() => props.removeTodo(props.todo.id)}
             >
-                Remove
-            </button>
-        </>
+                X
+            </TodoBtn>
+        </TodoDiv>
     );
 }
 

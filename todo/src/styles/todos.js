@@ -46,3 +46,29 @@ export const TodoAddBtn = styled.input`
     border-radius: 5px;
     margin: 1rem auto;
 `;
+
+export const TodoText = styled.p`
+    font-size: 2rem;
+    width: 90%;
+    max-width: 90%;
+    display: inline-block;
+`;
+
+export const TodoBtn = styled.button`
+    display: inline-block;
+    width: 10%;
+    max-width: 10%;
+    background: none;
+    border: 1px solid black;
+    border-radius: 15px;
+    
+    &:hover {
+        background: black;
+        color: white;
+    }
+`;
+
+export const TodoDiv = styled.div`
+    width: 100%;
+    border-bottom: 1px solid #666;
+`;
