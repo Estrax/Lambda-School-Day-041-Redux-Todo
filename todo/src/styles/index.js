@@ -1,7 +1,17 @@
 import {
-    AppDiv
+    AppDiv,
+    TodoTitle,
+    TodoList,
+    TodoAddForm,
+    TodoAddBtn,
+    TodoAddInput
 } from './todos';
 
 export {
-    AppDiv
+    AppDiv,
+    TodoTitle,
+    TodoList,
+    TodoAddForm,
+    TodoAddBtn,
+    TodoAddInput
 }

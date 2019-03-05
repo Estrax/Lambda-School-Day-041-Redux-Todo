@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 import Todo from '../components/todo';
 import { connect } from 'react-redux';
 import { toggleTodo, removeTodo } from '../actions';
+import { TodoList } from '../styles';
 
 const Todos = (props) => {
     return (
-        <>
+        <TodoList>
             {props.todos.map(todo =>
                 <Todo
                     key={todo.id}
@@ -15,7 +16,7 @@ const Todos = (props) => {
                     removeTodo={props.removeTodo}
                 />
             )}
-        </>
+        </TodoList>
     );
 }
 

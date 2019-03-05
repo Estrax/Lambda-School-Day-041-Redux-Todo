@@ -1,12 +1,12 @@
 import React from 'react';
 
+import { TodoTitle } from '../styles';
+
 const Header = () => {
     return (
-        <>
-            <h1>
-                Todo App
-            </h1>
-        </>
+        <TodoTitle>
+            Todo App
+        </TodoTitle>
     );
 }
 
