@@ -1,0 +1,16 @@
+import styled from 'styled-components';
+
+export const AppDiv = styled.div`
+    min-width: 380px;
+    max-width: 50%;
+	min-height: 480px;
+	max-height: 100%;
+	background: #fafafa;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(25,25,25,.25);
+	padding: 3rem;
+`;

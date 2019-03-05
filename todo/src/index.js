@@ -29,8 +29,8 @@ const GlobalStyles = createGlobalStyle`
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background: #ff9068;
-		background: linear-gradient(45deg, #000 , #fff);
+		background: #3A2D3B;
+		background: linear-gradient(45deg, #3A2D3B, #3A9D9B);
 		height: 100%;
 	}
 `;
