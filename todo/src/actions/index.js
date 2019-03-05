@@ -3,7 +3,7 @@ import {ADD_TODO, REMOVE_TODO, TOGGLE_TODO} from '../constants/actionTypes';
 export const addTodo = (todo) => {
     return {
         type: ADD_TODO,
-        payload: {todo: todo, completed: false}
+        payload: todo
     }
 }
 
