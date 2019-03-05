@@ -7,6 +7,13 @@ import { Provider } from 'react-redux';
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
+	@font-face {
+		font-family: 'Product Sans';
+		font-style: normal;
+		font-weight: 400;
+		src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+	}
+
 	html {
 		overflow: hidden;
 		font-size: 62.5%;
@@ -23,6 +30,7 @@ const GlobalStyles = createGlobalStyle`
 		height: 100vh;
 		font-size: 1.8rem;
 		line-height: 1.5;
+		font-family: 'Product Sans';
 	}
 
 	#root {
